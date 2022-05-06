@@ -1,0 +1,41 @@
+create database iproject;
+
+use iproject;
+
+create table stock(itemno int primary key,itemname varchar(30),mrp int,itemgroup varchar(30));
+
+create table bstock(itemno int primary key,itemname varchar(30),mrp int,itemgroup varchar(30));
+
+create table emp(empno integer primary key,empname varchar(77),salary integer,area varchar(66),age integer,grade char(1),dept varchar(67) );
+
+create table bemp(empno integer primary key,empname varchar(77),salary integer,area varchar(66),age integer,grade char(1),dept varchar(67) );insert into stock values(100,"pepsi 2l",100,"cold drink");
+insert into stock values(101,"sprite 2l",161,"cold drink");
+insert into stock values(102,"lays small",5,"eatables");
+insert into stock values(103,"lays medium",10,"eatables");
+insert into stock values(104,"lays large",20,"eatables");
+insert into stock values(105,"soap",100,"daily use");
+insert into stock values(106,"shampoo",254,"daily use");
+insert into stock values(107,"toothbrush",80,"daily use");
+insert into stock values(108,"comb",70,"daily use");
+insert into stock values(109,"tea",88,"daily use");
+insert into stock values(110,"pen",53,"stationary");
+insert into stock values(111,"note book",25,"stationary");
+insert into emp values(101,"ramesh",15000,"North Delhi",30,"B","comp. management");
+insert into emp values(102,"sushil",20000,"south Delhi",27,"B","comp. management");
+insert into emp values(103,"mayank",12560,"south Delhi",29,"B","comp. management");
+insert into emp values(104,"kunal verma",17890,"North Delhi",35,"B","comp. management");
+insert into emp values(105,"harshit",18903,"North Delhi",31,"C","cleaning");
+insert into emp values(106,"khushi",16902,"North Delhi",34,"B","comp. management");
+insert into emp values(107,"harsh",9000,"North Faridabad",28,"B","comp. management");
+insert into emp values(108,"rakhi",20000,"North Gurugram",23,"A","HR. management");
+insert into emp values(109,"geeta",20000,"North Gurugram",22,"A","HR. management");
+insert into emp values(110,"meet sharma",16780,"North Delhi",25,"B","comp. management");
+insert into emp values(111,"suresh",18090,"South Faridabad",33,"C","cleaning");
+insert into emp values(112,"amol",17900,"North Delhi",22,"B","comp. management");
+insert into emp values(113,"neel",15800,"North Delhi",26,"B","comp. management");
+insert into emp values(114,"chaitan",16890,"North Delhi",33,"C","cleanning");
+insert into emp values(115,"monu",14060,"North Delhi",23,"B","comp. management");
+insert into emp values(116,"manjay",20000,"South Delhi",24,"C","cleaning");
+insert into emp values(117,"uman",15900,"South Delhi",25,"C","comp. management");
+insert into emp values(118,"rajesh",15980,"North Delhi",29,"B","comp. management");
+insert into emp values(119,"rohit",30000,"North Delhi",34,"A","sales manager");
